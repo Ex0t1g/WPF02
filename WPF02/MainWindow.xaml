@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPF02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF02"
+        mc:Ignorable="d"
+            Title="MainWindow" Height="450" Width="450"
+    FontSize="24" SizeChanged="Window_SizeChanged">
+    <DockPanel>
+        <Button DockPanel.Dock="Bottom">OK</Button>
+
+        <Grid x:Name="grid" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="topRow" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Rectangle
+            Fill="Red" Width="40" Height="300"
+            Grid.Row="0" Grid.Column="0"
+            VerticalAlignment="Bottom" />
+            <TextBlock
+            Text="Январь" Grid.Row="1" Grid.Column="0" />
+        </Grid>
+    </DockPanel>
+</Window>
